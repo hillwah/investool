@@ -84,14 +84,6 @@ func Register(httpHandler http.Handler) {
 		c.Data(http.StatusOK, "text/plain", file)
 		return
 	})
-	app.GET("/ads.txt", func(c *gin.Context) {
-		file, err := statics.Files.ReadFile("ads.txt")
-		if err != nil {
-			logging.Error(c, "read ads file error:"+err.Error())
-		}
-		c.Data(http.StatusOK, "text/plain", file)
-		return
-	})
 	app.GET("/apple-touch-icon-120x120-precomposed.png", func(c *gin.Context) {
 		file, err := statics.Files.ReadFile("img/sidenav_icon.png")
 		if err != nil {

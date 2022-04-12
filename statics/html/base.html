@@ -15,15 +15,6 @@
     <link rel="stylesheet" href="/statics/css/app.css" />
     <title>{{ .PageTitle }} - InvesTool, 财报分析，股票检测，基本面选股，基金检测，基金筛选，4433法则，飙股在线等</title>
     <!-- 百度统计 -->
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?281f87a5501f74be56a6d65981d942a3";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
     <!-- 百度统计END -->
 </head>
 
@@ -94,15 +85,6 @@
 {{ define "footer" }}
 </main>
 
-<div class="container">
-<!-- cpu feeds block -->
-    <div class="cpu-feeds-block" data-site-id="275548247" data-block-id="92561"></div>
-    <script>
-        (function(){var url="//cpu.baidu.com";var getEntry=function(){var script=document.createElement("script");script.id="cpu-block-entry";script.src=url+"/js/cb.js";var scriptTag=document.getElementsByTagName("script")[0];scriptTag.parentNode.insertBefore(script,scriptTag)};var sentMsg=function(e){var msg={msg:e.toString()||"no err msg",line:e.lineno||-1};var img=document.createElement("img");img.src=url+"/msg?m=block&e="+encodeURIComponent(JSON.stringify(msg))};try{window.feedsbycpu=window.feedsbycpu||[];window.feedsbycpu.push({siteId:"275548247",blockId:"92561",display:"auto"});document.getElementById("cpu-block-entry")||getEntry()}catch(e){sentMsg(e)}})();
-    </script>
-<!-- cpu feeds block end-->
-</div>
-
 <footer class="page-footer">
     <div class="container">
         <div class="row">
@@ -152,18 +134,9 @@
 <script type="text/javascript" src="/statics/js/app.js" ></script>
 
 <!-- google auto ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3022214826355647"
-     crossorigin="anonymous"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EHXJT6J0DM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-EHXJT6J0DM');
-</script>
-<script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/cm.js" async="async" defer="defer" ></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
 </body>
 </html>
 {{ end }}
